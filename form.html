@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>FORM VALIDATION</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <div>
+        <form name= "myForm" action="#" id="form" method="post" onsubmit="return validateForm()">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." onfocus="myFocus(this)">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your lastname.." onfocus="myFocus(this)">
+
+          <label for="pname">Password</label>
+          <input type="password" id="pname" name="passname" placeholder="Your password..." onfocus="myFocus(this)">
+
+          <label for="ename">Email</label>
+          <input type="email" id="ename" name="emailaddress" placeholder="Your email..." onfocus="myFocus(this)">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Nigeria">Nigeria</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Zambia">Zambia</option>
+          </select>
+
+          <label for="input-alive">Agree with Terms & Condition</label>
+          <input type="checkbox" id="alive" tabindex="5"/>
+
+          <div>
+          <button id="button-send" class= "button1" type="button" onclick="vaidForm()">Submit</button>
+          <button id= "button-reset" class= "button1" type="button" value="Reset" onclick="mybutton()">reset</button>
+            </div>
+        </form>
+      
+      </div>
+</body>
+</html>
